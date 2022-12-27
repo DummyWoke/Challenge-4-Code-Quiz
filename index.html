@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, inital-scale=1.0"/>
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+        <title>
+        Code Quiz 
+        </title>
+        <link rel="stylesheet" href="style.css"/>
+
+    </head>
+
+    <body>
+    
+        <!--
+        The "TopTab" class is used to identify the portion of the page which contains the button
+        to access the previous player scores, aswell as the time passed for the quiz.
+        -->
+
+        <div class="TopTab">
+        <header>
+        <button class="ScoreButton" id="ScoreButton"><h2>Scores</h2></button>
+        <h2>Time: <span class="Time">0:00</span></h2>       
+        </header>
+        </div>
+     
+        <!--
+        The "Quiz" div class below is used to identify the portion which contains the start button and description for the quiz.
+        This section is inteded to disappear once quiz is complete
+        -->
+
+        <section>
+        <div class="Quiz">
+        <h1>JavaScript Quiz</h1>
+        <p>This quiz was made to test your knowledge of Java Script! Press "Start Quiz" to begin. </p>
+        <div class="StartButton">
+        <button class="QuizStartButton" id="QuizStartButton"><h2>Start Quiz</h2></button>
+        </div>
+        </section>
+        
+
+
+        <main>
+        <section QuestionFormat="QuestionTitle" id="QuestionScreen">
+        <h1 id="Questiontitle" class="QuestionTitle"></h1>
+        </section>
+
+        <!--
+        The P tag below is where the Java Script will generate the question elements once the test begins.
+        This section not showing up initially is intentional.
+        -->
+        <p id="AnswerInput" class="AnswerInput">
+        
+        </p>
+        </section>
+        <!--
+        The Footer below is used to display whether question was answered correctly or not.
+        This section not showing up initially is intentional.
+        -->
+
+        <footer id="QuestionResult" class="QuestionResult">
+            <p>
+        
+            </p>
+        </footer>
+
+
+
+        <!--
+        <div class="Answer1">
+        <button class="AnswerButton" id="AnswerButton1">Null</button>
+        
+        <div class="Answer2">
+        <button class="AnswerButton" id="AnswerButton2">Null</button>
+
+        <div class="Answer3">
+        <button class="AnswerButton" id="AnswerButton3">Null</button>
+        -->
+        </main>
+
+
+        <!--Line Below Links the Javacript file to the html-->
+        <script type="module" src="./script.js"></script>
+    </body>
+
+
+
+
+
+</html>

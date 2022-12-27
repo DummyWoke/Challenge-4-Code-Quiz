@@ -1,0 +1,32 @@
+body {
+    font-family: sans-serif;
+    background-color: #f9fbfd;
+}
+
+.wrapper {
+    padding-top: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 20px 20px;
+}
+
+.Quiz{
+    margin: auto;
+    width: 60%;
+    border: 3px solid #f1a043;
+    padding: 10px;
+    text-align: center;
+}
+
+h2{
+color: rgb(59, 73, 84);
+}
+
